@@ -1,0 +1,21 @@
+
+{
+  "name": "storytelling-workshop",
+  "version": "1.0.0",
+  "description": "AI-enabled storytelling workshop using React and OpenAI.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "framer-motion": "^4.1.17",
+    "@emotion/react": "^11.4.0",
+    "openai": "^3.2.1"
+  },
+  "keywords": ["react", "storytelling", "ai", "openai"],
+  "author": "Your Name",
+  "license": "MIT"
+}
