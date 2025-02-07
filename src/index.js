@@ -3,9 +3,12 @@ import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import { Textarea } from "./components/ui/textarea";
 import { motion } from "framer-motion";
-import OpenAI from "openai";
+import { Configuration, OpenAIApi } from "openai";
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+const openai = new OpenAIApi(configuration);
 
 export default function StoryWorkshop() {
   const [step, setStep] = useState(1);
