@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI-Enabled Storytelling Workshop</title>
     <style>
-      /* Forcefully block Inter font loading */
+      /* Block Inter font request by overriding it */
       @font-face {
         font-family: 'Inter';
-        src: local('Arial'), local('sans-serif');
+        src: local('Arial') !important;
       }
-      * {
-        font-family: 'Inter', sans-serif !important;
+      body {
+        font-family: 'Inter', sans-serif;
       }
     </style>
   </head>
   <body>
     <div id="root">
-      <p>If you're seeing this, the font override is applied!</p>
+      <p>The font override is in place! If you're seeing this message, the page is rendering correctly.</p>
     </div>
   </body>
 </html>
