@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import StoryWorkshop from "./path-to-your-main-component"; // Replace with actual path
+import StoryWorkshop from "./index"; // Adjust path if StoryWorkshop is in a different file
 
 const App = () => {
   try {
